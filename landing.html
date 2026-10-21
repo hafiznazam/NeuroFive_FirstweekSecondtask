@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TalentBridge – Internship placement that works</title>
+  <meta name="description" content="TalentBridge connects students with internships and gives companies a simple way to hire them.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Source+Sans+3:wght@400;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-label="Open menu">
+      <div class="site-header__bar">
+        <a class="brand" href="landing.html"><span class="brand__mark">Talent</span>Bridge</a>
+        <span class="menu-button" aria-hidden="true">☰</span>
+      </div>
+      <nav class="nav" aria-label="Main">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#features">Features</a></li>
+          <li><a class="nav__link" href="#stories">Stories</a></li>
+          <li><a class="nav__link" href="#pricing">Pricing</a></li>
+          <li><a class="nav__link" href="#signup">Sign up</a></li>
+          <li><a class="nav__link" href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container grid hero__grid">
+        <div>
+          <h1 id="hero-title">Your first internship, placed in two weeks</h1>
+          <p class="hero__lead">TalentBridge matches students with companies that want to train them, and handles the applications, interviews and paperwork in one place.</p>
+          <div class="hero__actions">
+            <a class="btn" href="#signup">Create a free account</a>
+            <a class="btn btn--ghost" href="#features">See how it works</a>
+          </div>
+        </div>
+        <picture>
+          <source type="image/webp" sizes="(min-width: 768px) 48vw, 100vw"
+                  srcset="images/hero-480.webp 480w, images/hero-800.webp 800w, images/hero-1280.webp 1280w">
+          <img class="hero__img" src="images/hero-800.jpg" sizes="(min-width: 768px) 48vw, 100vw"
+               srcset="images/hero-480.jpg 480w, images/hero-800.jpg 800w, images/hero-1280.jpg 1280w"
+               width="800" height="500" fetchpriority="high"
+               alt="A teal bridge arching over water toward a rising sun, representing the link between students and employers">
+        </picture>
+      </div>
+    </section>
+
+    <section class="section" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <h2 id="features-title">Everything between “apply” and “first day”</h2>
+        <div class="grid grid--3">
+          <article class="card">
+            <span class="feature__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M9 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><path d="m17 8 1.8 1.8L22 6.5"/></svg></span>
+            <h3>Skill-based matching</h3>
+            <p>Students list what they can do. Companies see ranked candidates, not a pile of resumes.</p>
+          </article>
+          <article class="card">
+            <span class="feature__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" focusable="false"><rect x="3" y="4" width="5" height="16" rx="1"/><rect x="10" y="4" width="5" height="10" rx="1"/><rect x="17" y="4" width="4" height="13" rx="1"/></svg></span>
+            <h3>One tracking board</h3>
+            <p>Every application, interview and offer sits in a single status view for both sides.</p>
+          </article>
+          <article class="card">
+            <span class="feature__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" focusable="false"><path d="M6 3h8l4 4v14H6Z"/><path d="M14 3v4h4M9 13h6M9 17h6"/></svg></span>
+            <h3>Paperwork done for you</h3>
+            <p>Offer letters and university sign-off forms are generated and sent automatically.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" aria-labelledby="stats-title">
+      <div class="container">
+        <h2 id="stats-title">TalentBridge so far</h2>
+        <dl class="stats">
+          <div class="stats__item"><dt>Students placed</dt><dd>4,200</dd></div>
+          <div class="stats__item"><dt>Partner companies</dt><dd>310</dd></div>
+          <div class="stats__item"><dt>Median time to offer</dt><dd>11 days</dd></div>
+          <div class="stats__item"><dt>Interns hired full-time</dt><dd>38%</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" id="stories" aria-labelledby="stories-title">
+      <div class="container">
+        <h2 id="stories-title">What people say</h2>
+        <div class="grid grid--3">
+          <figure class="card quote">
+            <blockquote class="quote__text">“I sent one application and had three interviews the next week.”</blockquote>
+            <figcaption class="quote__who">Ayesha R., Computer Science student</figcaption>
+          </figure>
+          <figure class="card quote">
+            <blockquote class="quote__text">“We filled five internship roles without reading a single cover letter.”</blockquote>
+            <figcaption class="quote__who">Daniel K., Engineering Manager</figcaption>
+          </figure>
+          <figure class="card quote">
+            <blockquote class="quote__text">“My university signed off the paperwork in a day instead of a month.”</blockquote>
+            <figcaption class="quote__who">Prof. Imran S., Placement Office</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight-top" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <h2 id="pricing-title">Pricing</h2>
+        <div class="grid grid--3">
+          <article class="card plan">
+            <h3>Student</h3><p class="plan__price">Free</p>
+            <ul class="plan__list"><li>Unlimited applications</li><li>Status tracking</li></ul>
+            <a class="btn btn--ghost" href="#signup">Start free</a>
+          </article>
+          <article class="card plan plan--featured">
+            <h3>Team</h3><p class="plan__price">$49 / month</p>
+            <ul class="plan__list"><li>Up to 10 open roles</li><li>Ranked candidate lists</li></ul>
+            <a class="btn" href="#signup">Start a trial</a>
+          </article>
+          <article class="card plan">
+            <h3>Campus</h3><p class="plan__price">Custom</p>
+            <ul class="plan__list"><li>University dashboards</li><li>Placement reports</li></ul>
+            <a class="btn btn--ghost" href="#signup">Contact us</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="signup" aria-labelledby="signup-title">
+      <div class="container container--narrow">
+        <h2 id="signup-title">Create your account</h2>
+        <form class="card form" action="#" method="post" novalidate>
+          <p class="field__hint">Fields marked <span class="field__req">(required)</span> must be filled in.</p>
+          <div class="field">
+            <label class="field__label" for="name">Full name <span class="field__req">(required)</span></label>
+            <input class="field__input" id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-err">
+            <span class="field__error" id="name-err">Enter your full name.</span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="email">Email <span class="field__req">(required)</span></label>
+            <input class="field__input" id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-hint email-err">
+            <span class="field__hint" id="email-hint">We only use this to send your matches.</span>
+            <span class="field__error" id="email-err">Enter a valid email, like name@example.com.</span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="role">I am a</label>
+            <select class="field__input" id="role" name="role">
+              <option>Student</option><option>Employer</option><option>University</option>
+            </select>
+          </div>
+          <div class="field">
+            <label class="field__label" for="msg">Message</label>
+            <textarea class="field__input" id="msg" name="msg" rows="3"></textarea>
+          </div>
+          <button class="btn" type="submit">Create account</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <ul class="site-footer__links">
+        <li><a href="#features">Features</a></li><li><a href="#pricing">Pricing</a></li>
+        <li><a href="#signup">Contact</a></li><li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+      <p>© 2026 TalentBridge. A fictional product built for a design exercise.</p>
+    </div>
+  </footer>
+</body>
+</html>
